@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Github API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        ::placeholder {
+            color: #ffc107 !important;
+            opacity: 0.5 !important;
+
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container">
+        <div class="search m-3 p-4 border border-light border-top-0 border-opacity-25 rounded-5">
+            <h1>Github Kullanıcılarını Arayın</h1>
+            <p class="lead">Bir kullanıcı adı girin ve kullanıcının bilgilerine ulaşın!</p>
+            <form id="github-form">
+                <input type="text" name="githubname" id="githubname" class="form-control bg-dark text-warning"
+                    placeholder="Kullanıcı adı girin">
+                <br />
+                <button type="submit" class="btn btn-warning w-100">Ara</button>
+            </form>
+        </div>
+
+
+        <div id="profile">
+
+            <!-- <div style="background-color: #000000;" class="card card-body mb-3 rounded-5">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="" target = "_blank">
+                     <img class="img-fluid mb-2" src="https://upload.wikimedia.org/wikipedia/tr/a/a0/Cem_Karaca.jpg"> </a>
+                     <hr>
+                     <div class="text-warning" id="fullName"><strong> Mustafa Murat Coşkun</strong></div>
+                     <hr>
+                     <div id="bio">asdasdasdsad</div>
+                    </div>
+                  <div class="col-md-8">
+                        <button class="btn btn-secondary">
+                              Takipçi  <span class="badge badge-light"></span>
+                        </button>
+                        <button class="btn btn-info">
+                             Takip Edilen  <span class="badge badge-light"></span>
+                          </button>
+                        <button class="btn btn-danger">
+                            Repolar  <span class="badge badge-light"></span>
+                        </button>
+                        <hr>
+                        <li class="list-group">
+                            <li class="list-group-item borderzero">
+                                <img src="images/company.png" width="30px"> <span id="company">Naber</span>
+                                
+                            </li>
+                            <li class="list-group-item borderzero">
+                                <img src="images/location.png" width="30px"> <span id = "location">sadasdsad</a>
+                                
+                            </li>
+                            <li class="list-group-item borderzero">
+                                <img src="images/mail.png" width="30px"> <span id="company">Naber</span>
+                                
+                            </li>
+                            
+                        </div>
+                           
+                        
+                  </div>
+            </div>
+        </div> -->
+
+        </div>
+
+        <h3 class="page-heading mb-3">En son repolar</h3>
+        <div id="repos">
+
+            <!-- <div class="mb-2 card-body">
+                <div class="row">
+                    <div class="col-md-2">
+                    <span></span> 
+                    <a href="#" target = "_blank" id = "repoName"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-secondary">
+                            Starlar  <span class="badge badge-light" id="repoStar"></span>
+                        </button>
+
+                        <button class="btn btn-info">
+                            Forklar  <span class="badge badge-light" id ="repoFork"></span>
+                        </button>
+                
+                    </div>
+            </div>
+ 
+            </div> -->
+
+        </div>
+
+        <h3 class="page-heading mb-3">Son Aramalar</h3>
+
+        <div id="lastSearch" style="margin-bottom: 100px;">
+            <ul class="list-group" id="last-users">
+                <!-- <li class="list-group-item">asdaskdjkasjkşdjşasjd</li> -->
+            </ul>
+            <hr>
+            <button id="clear-last-users" class="btn btn-danger text-warning w-100">Son Arananları Temizle</button>
+        </div>
+
+
+
+        <script src="github.js"></script>
+        <script src="storage.js"></script>
+        <script src="ui.js"></script>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
